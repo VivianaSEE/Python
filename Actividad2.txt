@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May 20 17:42:56 2025
+
+@author: vsesteve
+"""
+#Método 1
+color=input("Ingrese su color favorito: ")
+prenda=input("Ingrese su prenda de vestir favorita: ")
+hobby=input("Ingrese su Hobby: ")
+nacimiento=input("Ingrese su año de nacimiento: ")
+peso=input("Ingrese su peso en KG: ")
+print("\t¡Saludos!,\nMi color favorito es: ",color.upper(),",\nMi prenda favorita es: ",prenda.capitalize(),",\nMi hobby es: ",hobby.lower(),",\nNací en: ",str(int(nacimiento)),",\nMi peso es: ",str(round(float(peso),2))," Kilogramos.\n¡Hasta Pronto!",sep="",end="\n")    
+
+
+# print("Mi nombre es ",nom.title(),".\n\t\tMi apellido ",ap.capitalize(),"\n\t\tTengo ",int(ed)," años de edad.\n\t\tMido ",round((st/100),2)," metros de altura.\n\tMuchas gracias...",sep="",end="\n")
+ 
+#Método 2
+color=input("Ingrese su color favorito: ")
+prenda=input("Ingrese su prenda de vestir favorita: ")
+hobby=input("Ingrese su Hobby: ")
+nacimiento=input("Ingrese su año de nacimiento: ")
+peso=input("Ingrese su peso en KG: ")
+val=("\t¡Saludos!,\nMi color favorito es: "+color.upper()+ \
+  ",\nMi prenda favorita es: "+prenda.capitalize()+ \
+",\nMi hobby es: "+hobby.lower()+ \
+",\nNací en: "+str(int(nacimiento))+ \
+",\nMi peso es: "+str(round(float(peso),2))+" Kilogramos.\n¡Hasta Pronto!")    
+print(val)
+
+#Método 3 
+color=input("Ingrese su color favorito: ")
+prenda=input("Ingrese su prenda de vestir favorita: ")
+hobby=input("Ingrese su Hobby: ")
+nacimiento=input("Ingrese su año de nacimiento: ")
+peso=input("Ingrese su peso en KG: ")
+val=f'\t¡Saludos!,\nMi color favorito es: {color.upper()}\
+,\nMi prenda favorita es: {prenda.capitalize()}\
+,\nMi hobby es: {hobby.lower()}\
+,\nNací en: {str(int(nacimiento))}\
+,\nMi peso es: {str(round(float(peso),2))} Kilogramos.\n¡Hasta Pronto!'    
+print(val)
+
+#Método 4
+color=input("Ingrese su color favorito: ")
+prenda=input("Ingrese su prenda de vestir favorita: ")
+hobby=input("Ingrese su Hobby: ")
+nacimiento=input("Ingrese su año de nacimiento: ")
+peso=input("Ingrese su peso en KG: ")
+val=r'\t¡Saludos!,\nMi color favorito es: {color.upper()}\
+,\nMi prenda favorita es: {prenda.capitalize()}\
+,\nMi hobby es: {hobby.lower()}\
+,\nNací en: {str(int(nacimiento))}\
+,\nMi peso es: {str(round(float(peso),2))} Kilogramos.\n¡Hasta Pronto!'    
+print(val)
